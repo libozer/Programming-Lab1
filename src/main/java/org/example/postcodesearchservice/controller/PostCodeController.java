@@ -15,7 +15,7 @@ public class PostCodeController {
     }
 
     @GetMapping("/postcode/{title}")
-    public PostCode getBooksByTitle(@PathVariable String title) {
-        return postCodeService.getBooksData(title);
+    public PostCode getPostCodeByTitle(@PathVariable String title) {
+        return postCodeService.getPostCodeData(title);
     }
 }

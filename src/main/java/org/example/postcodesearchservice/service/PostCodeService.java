@@ -13,7 +13,7 @@ public class PostCodeService {
     public PostCodeService(RestTemplate restTemplate) {
         this.restTemplate = restTemplate;
     }
-    public PostCode getBooksData(String postcode) {
+    public PostCode getPostCodeData(String postcode) {
         String apiUrl = String.format(API_URL, postcode);
         return restTemplate.getForObject(apiUrl, PostCode.class);
     }
